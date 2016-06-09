@@ -1,0 +1,6 @@
+<app-talk 
+    *ngFor="let talk of talks" 
+    [talk]="talk" 
+    (watch)="watch.emit($event)"
+    (rate)="rate.emit($event)">
+</app-talk>

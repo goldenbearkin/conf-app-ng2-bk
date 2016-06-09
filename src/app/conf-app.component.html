@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<div class="wrapper">
+  <app-filters (filter)="onFilter($event)"></app-filters>
+  <app-talks 
+    [talks]="talks | filterSpeaker:speaker" 
+    (watch)="onWatch($event)"
+    (rate)="onRate($event)">
+  </app-talks>
+</div>

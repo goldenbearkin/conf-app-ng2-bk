@@ -1,0 +1,24 @@
+<md-card>   
+  <div class="container">
+    <div class="rating">
+      <span>Rating</span>
+      <span>{{talk.avgRating}}</span>
+    </div>
+    <div class="contents">
+      <md-card-title>{{talk.title}}</md-card-title>
+      <md-card-subtitle>by {{talk.speaker}}</md-card-subtitle>
+      <button 
+        class="watch" 
+        md-raised-button 
+        (click)="onClickWatch()">
+        {{talk.watched ? 'WATCH AGAIN' : 'WATCH'}}
+      </button>
+      <button 
+        md-raised-button 
+        [disabled]="talk.rated" 
+        (click)="onClickRate()">
+        {{talk.rated ? 'RATED' : 'RATE'}}
+      </button>
+    </div>
+  </div>
+</md-card>
