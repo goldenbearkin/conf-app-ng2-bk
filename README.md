@@ -24,3 +24,6 @@ In Angular2, data flows into a component via input properties, out of a componen
 2. cd conf-app-ng2
 3. npm install
 4. ng serve
+
+### Reference:
+http://victorsavkin.com/post/118372404541/the-core-concepts-of-angular-2
